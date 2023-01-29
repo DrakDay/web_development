@@ -15,7 +15,7 @@ app.use(express.static("public"));
 
 mongoose.set('strictQuery', false)
 
-mongoose.connect("mongodb://localhost:27017/todolistDB")
+mongoose.connect("mongodb+srv://admin:admin@cluster0.2f7ze1k.mongodb.net/todolistDB?retryWrites=true&w=majority")
 
 const ItemSchema = new mongoose.Schema({
   name:{
